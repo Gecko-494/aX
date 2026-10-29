@@ -8,7 +8,7 @@ import {
   getCartCount,
   getCartTotal,
   type CartItem,
-} from "../cart";
+} from "../lib/cart";
 
 export default function CartPage() {
   const [cart, setCart] = useState<CartItem[]>([]);

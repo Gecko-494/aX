@@ -198,25 +198,13 @@ function addToCart(product: (typeof products)[number]) {
             <span>Welcome to aX</span>
             <strong>Explore store</strong>
           </a>
-          <a href="#products" className="cart-link">
+          <a href="/cart" className="cart-link">
             ♧ <span>Cart</span>
            <b>{getCartCount(cart)}</b>
           </a>
         </div>
       </header>
-      {cart.length > 0 && (
-  <div className="cart-summary">
-    <span>
-      {getCartCount(cart)} item
-      {getCartCount(cart) === 1 ? "" : "s"} in your cart
-    </span>
-
-    <strong>Subtotal: {formatPrice(getCartTotal(cart))}</strong>
-
-    <a href="/cart">View cart →</a>
-  </div>
-)}
-
+     
       <nav className="category-nav" aria-label="Product categories">
         {categories.map((item) => (
           <button
